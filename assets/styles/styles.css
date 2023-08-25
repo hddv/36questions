@@ -1,3 +1,97 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Inter:wght@700&family=Poppins:wght@500&display=swap");
+
+:root {
+  --cta-button: #535353;
+}
+
+html {
+  height: 100%;
+  font-synthesis: none; 
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
   background-color: #000;
+  color: white;
+  height: 100%;
+}
+
+.container {
+  padding: 0 1rem 2.5rem 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar__link {
+  color: #fafafa;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.06rem;
+}
+
+.toggle__checkbox {
+}
+
+.main {
+  height: 100%;
+  padding: 1.5rem;
+  font-family: "Alegreya", serif;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.description {
+}
+
+.description__text {
+  text-align: justify;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.description__text:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: flex;
+  width: 9rem;
+  padding: 0.75rem 2rem;
+  justify-content: center;  
+  align-items: center;  
+
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5rem;  
+  background: var(--cta-button, #535353);
+  color: #FAFAFA;
+  border: none;
 }
